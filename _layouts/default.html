@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+  {% include header.html %}
+  <div class="content">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+</body>
+</html>
+

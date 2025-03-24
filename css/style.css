@@ -1,0 +1,165 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: #fafafa; /* Light background for contrast */
+}
+
+/* Navigation Styles */
+nav {
+  background: #005f73; /* Vibrant blue-green shade */
+  color: #fffffa; /* Near-white text */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+nav a {
+  color: #fffffa;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background: #017a8c; /* Lighter shade on hover */
+  border-radius: 4px;
+}
+
+/* Headshot Section in Navigation */
+nav .headshot {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav .headshot img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Change the headshot name color for better visibility */
+nav .headshot h2 {
+  color: #fffffa;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px #000; /* Optional for improved contrast */
+}
+
+/* Main Content Container */
+.content {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #e0e0e0;
+  margin-bottom: 60px;
+}
+
+/* Headings */
+h1 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.content section h1 {
+  margin-left: 0;
+  text-align: left;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Subsection (nested within sections) */
+.subsection {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #005f73;
+  color: #fffffa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  section {
+    max-width: 90%;
+    background: #ffffff;
+  }
+  nav a {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Skip Link (for accessibility) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #005f73;
+  color: #fffffa;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Contact Icons Styling */
+.contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.contact-icons a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.separator {
+  color: #333;
+  font-size: 18px;
+  margin: 0 5px;
+  user-select: none;
+}

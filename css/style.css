@@ -10,7 +10,7 @@ body {
 
 /* Navigation Styles */
 nav {
-  background: #005f73; /* Vibrant blue-green shade */
+  background: #EE9BDC; /* Vibrant blue-green shade */
   color: #fffffa; /* Near-white text */
   padding: 1rem;
 }
@@ -23,7 +23,7 @@ nav ul {
 }
 
 nav a {
-  color: #fffffa;
+  color: #fffffa; 
   text-decoration: none;
   padding: 0.5rem 1rem;
 }

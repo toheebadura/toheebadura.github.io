@@ -10,7 +10,7 @@ body {
 
 /* Navigation Styles */
 nav {
-  background: #EE9BDC; /* Vibrant blue-green shade */
+  background: #A2A2E7; /* Vibrant blue-green shade */
   color: #fffffa; /* Near-white text */
   padding: 1rem;
 }
@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-  background: #017a8c; /* Lighter shade on hover */
+  background: #A2A2E7; /* Lighter shade on hover */
   border-radius: 4px;
 }
 
@@ -99,7 +99,7 @@ h2 {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #005f73;
+  background: #A2A2E7;
   color: #fffffa;
 }
 
@@ -134,7 +134,7 @@ footer {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #005f73;
+  background: #A2A2E7;
   color: #fffffa;
   padding: 8px;
   z-index: 100;

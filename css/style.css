@@ -85,9 +85,9 @@ nav ul li a.active {
 ------------------------------ */
 
 .content {
-  margin-left: 280px;
+  margin-left: 2350px;
   padding: 40px;
-  width: calc(100% - 280px);
+  width: calc(100% - 350px);
 }
 
 section {

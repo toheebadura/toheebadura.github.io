@@ -1,184 +1,134 @@
-/* -----------------------------
-   GLOBAL STYLES
------------------------------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
-html {
-  scroll-behavior: smooth;
-}
-
+/* Base Styles */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f5f5f8;
-  color: #222;
+  padding: 0;
+  color: #333;
+  background: #fafafa;
   display: flex;
-  min-height: 100vh;
 }
 
-/* -----------------------------
-   SIDEBAR NAVIGATION
------------------------------- */
-
+/* Fixed Side Navigation */
 nav {
-  width: 260px;
-  background-color: #A2A2E7;
-  color: #ffffff;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 3px 0 12px rgba(0,0,0,0.15);
   position: fixed;
+  left: 0;
   top: 0;
-  bottom: 0;
+  height: 100vh;
+  width: 260px;
+  background: #A2A2E7;
+  color: white;
+  padding: 1rem;
+  overflow-y: auto;
 }
 
 nav .headshot {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 nav .headshot img {
-  width: 130px;
-  height: 130px;
   border-radius: 50%;
-  border: 3px solid #ffffff;
-  object-fit: cover;
+  width: 140px;
+  height: 140px;
 }
 
 nav .headshot h2 {
-  margin: 10px 0 0;
-  font-weight: 600;
-  font-size: 20px;
-  color: #ffffff;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px #000;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
 }
 
 nav ul li {
-  margin: 15px 0;
+  margin: 12px 0;
 }
 
-nav ul li a {
+nav a {
+  color: #fff;
   text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   display: block;
-  padding: 10px 15px;
-  border-radius: 8px;
-  transition: 0.3s;
+  padding: 0.5rem;
+  border-radius: 6px;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  background: #8e8ed8;
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-
-/* -----------------------------
-   MAIN CONTENT AREA
------------------------------- */
-
+/* MAIN CONTENT FULL WIDTH (beside fixed nav) */
 .content {
-  margin-left: 280px;
+  margin-left: 260px; /* same width as nav */
+  width: calc(100% - 260px);
   padding: 40px;
-  width: calc(100% - 280px);
+  max-width: 100%;
 }
 
+/* Section Styling */
 section {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
   margin-bottom: 50px;
-  max-width: 950px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-left: 6px solid #A2A2E7; /* colored left stripe */
 }
 
 h1 {
   margin-top: 0;
-  font-size: 28px;
-  font-weight: 600;
-  border-bottom: 3px solid #e0e0e0;
+  border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
 }
 
-h2 {
-  margin-top: 25px;
-  font-size: 22px;
-  font-weight: 600;
-}
-
 .subsection {
-  border-left: 4px solid #A2A2E7;
-  padding-left: 18px;
-  margin-top: 18px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
-/* -----------------------------
-   CONTACT ICONS
------------------------------- */
-
+/* Contact Icons */
 .contact-icons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 1rem;
 }
 
 .contact-icons img {
-  width: 28px;
-  height: 28px;
-  transition: 0.2s;
+  width: 26px;
+  height: 26px;
 }
 
-.contact-icons img:hover {
-  transform: scale(1.15);
-}
-
-.separator {
-  font-weight: bold;
-  opacity: 0.7;
-}
-
-/* -----------------------------
-   FOOTER
------------------------------- */
-
+/* Footer */
 footer {
-  text-align: left;
-  margin-left: 280px;
+  width: calc(100% - 260px);
+  margin-left: 260px;
+  text-align: center;
   padding: 20px;
-  color: #777;
-  font-size: 14px;
+  background: #A2A2E7;
+  color: white;
+  margin-top: 60px;
+  border-radius: 6px 0 0 0;
 }
 
-/* -----------------------------
-   RESPONSIVE DESIGN
------------------------------- */
-
+/* Responsive Layout */
 @media (max-width: 900px) {
-
   nav {
     position: relative;
     width: 100%;
     height: auto;
-    box-shadow: none;
   }
 
   .content {
     margin-left: 0;
     width: 100%;
-    padding: 20px;
   }
 
   footer {
+    width: 100%;
     margin-left: 0;
   }
 }
-
